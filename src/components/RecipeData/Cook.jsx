@@ -4,7 +4,7 @@ import { IoTimeOutline } from "react-icons/io5";
 
 import { AiOutlineFire } from "react-icons/ai";
 
-const Cook = ({menu}) => {
+const Cook = ({menu,handleCook }) => {
     const {recipe_name,short_description,recipe_image,ingredients,preparing_time,calories} =menu
     return (
         <div>
@@ -33,7 +33,7 @@ const Cook = ({menu}) => {
          </div>
        </div>
     <div className="card-actions justify-start">
-      <button className="btn bg-green-500 rounded-full font-semibold text-xl">Want to cook</button>
+      <button onClick={() =>handleCook(menu) } className="btn bg-green-500 rounded-full font-semibold text-xl">Want to cook</button>
     </div>
     </div>
     </div> 
@@ -41,7 +41,8 @@ const Cook = ({menu}) => {
     );
 };
 Cook.propTypes ={
-    menu:PropTypes.object
+    menu:PropTypes.object,
+    handleCook :PropTypes.func
 }
 
 export default Cook;
