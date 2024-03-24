@@ -2,10 +2,16 @@
 
 const Navbar = () => {
     return (
-        <div>
-          <div className="navbar bg-base-100">
+        <div className="">
+          <div className="navbar bg-base-100 mx-auto px-10 ">
   <div className="flex-1">
     <h1 className="text-2xl font-serif font-bold">Home Cooking recipe</h1>
+  </div>
+  <div className="md:space-x-5 md:mr-48 invisible md:visible">
+    <a href=''>Home</a>
+    <a href=''>Recipes</a>
+    <a href=''>About </a>
+    <a href=''>Search</a>
   </div>
   <div className="flex-none gap-2">
     <div className="form-control">
@@ -17,16 +23,7 @@ const Navbar = () => {
           <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
         </div>
       </div>
-      <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-        <li>
-          <a className="justify-between">
-            Profile
-            <span className="badge">New</span>
-          </a>
-        </li>
-        <li><a>Settings</a></li>
-        <li><a>Logout</a></li>
-      </ul>
+      
     </div>
   </div>
 </div>  
