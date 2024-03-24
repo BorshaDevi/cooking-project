@@ -1,0 +1,57 @@
+[
+    {
+      "recipe_id": 1,
+      "preparing_time": 30,
+      "calories": 450,
+      "recipe_name": "Spaghetti Carbonara",
+      "short_description": "Classic Italian pasta dish with creamy sauce",
+      "ingredients": ["220g Spaghetti", "150g Bacon", "2 Eggs", "50g Parmesan cheese", "Black pepper to taste"],
+      "recipe_image": "https://i.ibb.co/c6JT8Zf/fresh-vegetables-eggs-chopping-bell-pepper-black-wood-background.jpg"
+    },
+    {
+      "recipe_id": 2,
+      "preparing_time": 25,
+      "calories": 380,
+      "recipe_name": "Chicken Stir-Fry",
+      "short_description": "Quick and healthy Asian-inspired dish",
+      "ingredients": ["300g Chicken breast", "Assorted vegetables (bell peppers, broccoli, carrots)", "Soy sauce", "2 cloves Garlic", "1 tsp Ginger", "Vegetable oil for frying"],
+      "recipe_image": "https://i.ibb.co/hctdXvk/top-view-fresh-chicken-with-tomatoes-pepper-dark-blue-surface.jpg"
+    },
+    {
+      "recipe_id": 3,
+      "preparing_time": 40,
+      "calories": 320,
+      "recipe_name": "Vegetarian Chili",
+      "short_description": "Hearty and satisfying meatless chili",
+      "ingredients": ["400g Kidney beans", "400g Black beans", "400g Tomatoes", "1 Onion", "2 Bell peppers", "1 cup Corn", "Chili powder to taste", "Cumin to taste", "2 cloves Garlic"],
+      "recipe_image": "https://i.ibb.co/WV6BxM5/high-angle-bunch-fresh-vegetables-assortment.jpg"
+    },
+    {
+      "recipe_id": 4,
+      "preparing_time": 35,
+      "calories": 380,
+      "recipe_name": "Mushroom Risotto",
+      "short_description": "Creamy Italian rice dish with mushrooms",
+      "ingredients": ["300g Arborio rice", "200g Mushrooms", "1 Onion", "1 liter Vegetable broth", "150ml White wine", "50g Parmesan cheese", "50g Butter"],
+      "recipe_image": "mushroom_risotto.jpg"
+    },
+    {
+      "recipe_id": 5,
+      "preparing_time": 20,
+      "calories": 300,
+      "recipe_name": "Grilled Salmon",
+      "short_description": "Healthy and flavorful grilled salmon fillets",
+      "ingredients": ["4 Salmon fillets (about 150g each)", "Olive oil", "1 Lemon", "2 cloves Garlic", "Fresh dill", "Salt and black pepper to taste"],
+      "recipe_image": "https://i.ibb.co/kDPHqYD/front-view-fresh-red-tomatoes-with-eggplants-dark-background.jpg"
+    },
+    {
+      "recipe_id": 6,
+      "preparing_time": 15,
+      "calories": 250,
+      "recipe_name": "Caprese Salad",
+      "short_description": "Simple and refreshing Italian salad",
+      "ingredients": ["3-4 Tomatoes", "200g Fresh mozzarella", "Fresh basil leaves", "Extra virgin olive oil", "Balsamic vinegar", "Salt and black pepper to taste"],
+      "recipe_image": "https://i.ibb.co/QrV7Cns/pasta-cooking-ingredients.jpg"
+    }
+  ]
+  
