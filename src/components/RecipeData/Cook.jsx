@@ -12,13 +12,13 @@ const Cook = ({menu}) => {
         <img className=' rounded-md' src={recipe_image}  />
     <div className="card-body">
     <h2 className="card-title">{recipe_name}</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
+    <p>{short_description}</p>
     <hr></hr>
-    <ul>
-        <li>{
-            
-            }</li>
-    </ul>
+    <h1 className='font-semibold'>Ingredients:</h1>
+        {
+            ingredients.map((ingredient,index) => <ul key={index}><li><span className='s'>.</span>{ingredient}</li></ul>)
+        }
+    
        <hr></hr>
        <div className=' flex justify-between '>
          <div className='flex space-x-1'>
