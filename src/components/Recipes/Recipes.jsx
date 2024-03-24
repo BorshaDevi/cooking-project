@@ -12,7 +12,7 @@ const Recipes = () => {
         .then (data => setRecipes(data))
     },[])
     return (
-        <div>
+        <div className="grid lg:grid-cols-2 space-y-5 ">
         {
             recipes.map((recipe,index) => <Cook  key={index} menu={recipe}></Cook>)
         }

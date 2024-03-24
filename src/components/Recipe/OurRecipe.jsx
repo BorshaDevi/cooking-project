@@ -12,7 +12,9 @@ const OurRecipe = () => {
                  should have been prepared hours in advance, <br></br>
                 or that the ingredients are not easily obtainable. </p>
                 </div>
+                
             <Recipes></Recipes>
+            
         </div>
     );
 };
