@@ -20,14 +20,16 @@ const Cook = ({menu}) => {
             }</li>
     </ul>
        <hr></hr>
-       <div>
-         <div>
+       <div className=' flex justify-between '>
+         <div className='flex space-x-1'>
             <button><IoTimeOutline /></button>
            <p>{preparing_time}</p>
+            <p>minutes</p>
          </div>
-         <div>
+         <div className='flex space-x-1'>
             <button><AiOutlineFire /></button>
             <p>{calories}</p>
+            <p>calories</p>
          </div>
        </div>
     <div className="card-actions justify-start">
