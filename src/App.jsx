@@ -1,6 +1,7 @@
 
 import './App.css'
 import Bannar from './components/Bannar/Bannar'
+
 import Navbar from './components/Navbar/Navbar'
 import OurRecipe from './components/Recipe/OurRecipe'
 
@@ -13,7 +14,7 @@ function App() {
         <Navbar></Navbar>
         <Bannar></Bannar>
         <OurRecipe></OurRecipe>
-        
+       
       </div>
     </>
   )

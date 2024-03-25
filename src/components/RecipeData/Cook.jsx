@@ -33,7 +33,7 @@ const Cook = ({menu,handleCook }) => {
          </div>
        </div>
     <div className="card-actions justify-start">
-      <button onClick={() =>handleCook(menu) } className="btn bg-green-500 rounded-full font-semibold text-xl">Want to cook</button>
+      <button onClick={handleCook } className="btn bg-green-500 rounded-full font-semibold text-xl">Want to cook</button>
     </div>
     </div>
     </div> 
