@@ -1,22 +1,25 @@
 
-
-const Menu = () => {
+import PropTypes from "prop-types"
+const Menu = ({cooking,count}) => {
+    const {recipe_name,preparing_time,calories} =cooking
     return (
-        <div>
-             <div className="overflow-x-auto">
-  <table className="table">
+        <div className="items-center text-centerm ml-20">
     <tbody>
       <tr>
-        <th>1</th>
-        <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td><button className="btn">preparing</button></td>
+        <td>{count}</td>
+        <td>{recipe_name}</td>
+        <td>{preparing_time}</td>
+        <td>{calories}</td>
+        <td><button className="btn bg-green-500 text-black">preparing</button></td>
       </tr>
     </tbody>
-    </table>
+  
     </div>
-        </div>
+       
     );
 };
-
+Menu.propTypes = {
+    cooking:PropTypes.object,
+    count:PropTypes.number
+}
 export default Menu;

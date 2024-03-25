@@ -1,11 +1,17 @@
+import { useState } from "react";
 import CookRecipes from "../CookRecipes/CookRecipes";
 import Recipes from "../Recipes/Recipes";
 
 
 const OurRecipe = () => {
+    const [cookingMenu,setCookingMenu] =useState([])
+    const [count,setCount] =useState(0)
 
     const handleClick=(menu) =>{
-        console.log('working',menu)
+        const newCookingMenu =[...cookingMenu,menu]
+        console.log(newCookingMenu)
+        setCookingMenu(newCookingMenu)
+        setCount(count+1)
     }
     return (
         <div >
@@ -19,7 +25,7 @@ const OurRecipe = () => {
                 </div>
                 <div className="flex space-x-10">
             <Recipes handleClick={handleClick}></Recipes>
-            <CookRecipes></CookRecipes>
+            <CookRecipes count={count} cookingMenu={cookingMenu}></CookRecipes>
             </div>
         </div>
     );
