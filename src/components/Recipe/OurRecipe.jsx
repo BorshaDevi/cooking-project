@@ -1,6 +1,8 @@
 import { useState } from "react";
 import CookRecipes from "../CookRecipes/CookRecipes";
 import Recipes from "../Recipes/Recipes";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const OurRecipe = () => {
@@ -8,10 +10,18 @@ const OurRecipe = () => {
     const [count,setCount] =useState(0)
 
     const handleClick=(menu) =>{
-        const newCookingMenu =[...cookingMenu,menu]
-        console.log(newCookingMenu)
-        setCookingMenu(newCookingMenu)
-        setCount(count+1)
+        const isExist = cookingMenu.find(item => item.id == menu.id)
+        if(!isExist){
+            const newCookingMenu =[...cookingMenu,menu]
+            setCookingMenu(newCookingMenu)
+            setCount(count+1)
+        }
+        else{
+            toast.success("Success Notification !", {
+                position: toast.POSITION.TOP_RIGHT,
+            })
+        }
+        
     }
     return (
         <div >
@@ -25,6 +35,7 @@ const OurRecipe = () => {
                 </div>
                 <div className="flex space-x-10">
             <Recipes handleClick={handleClick}></Recipes>
+            <ToastContainer />
             <CookRecipes count={count} cookingMenu={cookingMenu}></CookRecipes>
             </div>
         </div>

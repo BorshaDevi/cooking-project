@@ -34,6 +34,7 @@ const Cook = ({menu,handleClick }) => {
        </div>
     <div className="card-actions justify-start">
       <button onClick={() => handleClick(menu) } className="btn bg-green-500 rounded-full font-semibold text-xl">Want to cook</button>
+      
     </div>
     </div>
     </div> 
