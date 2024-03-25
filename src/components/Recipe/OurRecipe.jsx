@@ -1,7 +1,12 @@
+import CookRecipes from "../CookRecipes/CookRecipes";
 import Recipes from "../Recipes/Recipes";
 
 
 const OurRecipe = () => {
+
+    const handleClick=(menu) =>{
+        console.log('working',menu)
+    }
     return (
         <div >
             <div className="text-center">
@@ -12,9 +17,10 @@ const OurRecipe = () => {
                  should have been prepared hours in advance, <br></br>
                 or that the ingredients are not easily obtainable. </p>
                 </div>
-                
-            <Recipes></Recipes>
-            
+                <div className="flex space-x-10">
+            <Recipes handleClick={handleClick}></Recipes>
+            <CookRecipes></CookRecipes>
+            </div>
         </div>
     );
 };
